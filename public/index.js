@@ -6,12 +6,12 @@ var oldX = 100;
 var oldY = 100;
 
   var setX= function(x){
-  if (x < 590 && x > 10)
+  if (x < 490 && x > 10)
     oldX = x;
   }
 
   var setY = function(y){
-    if (y < 490 && y > 10)
+    if (y < 340 && y > 10)
       oldY = y;
   }
 
@@ -30,20 +30,20 @@ var newCoordinates = function(event, x, y){
   switch (event.key) {
     case 'ArrowDown':
       // console.log('what was y', y);
-      y+= 5;
+      y+= 4;
       // console.log('whats y now', y);
       draw(x, y);
       break;
     case 'ArrowUp':
-      y-= 5;
+      y-= 4;
       draw(x, y);
       break;
     case 'ArrowLeft':
-      x-= 5;
+      x-= 4;
       draw(x, y);
       break;
     case 'ArrowRight':
-      x+= 5;
+      x+= 4;
       draw(x, y);
       break;
   }
@@ -56,7 +56,7 @@ var draw = function(x, y) {
 }
 
 document.addEventListener('keydown', function(event){
-  console.log('hello?', event);
+  // console.log('hello?', event);
   newCoordinates(event, oldX, oldY);
 })
 

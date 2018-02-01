@@ -1,7 +1,10 @@
 body {
   margin: auto 0;
+  background-image: url(http://prodimage.images-bn.com/pimages/0026511050501_p0_v2_s1200x630.jpg);
+  background-repeat: no-repeat;
 }
 
 canvas {
-  border: 1px solid black;
+  /* border: 1px solid black; */
+  margin: 100px 0px 0px 98px;
 }
